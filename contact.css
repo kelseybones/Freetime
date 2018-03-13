@@ -76,3 +76,14 @@ form input {
     height: 30px;
     text-align: center;
 }
+
+
+.download_color_block {
+    min-height: 300px;
+    z-index: -10;
+    background-color: #F0C22E;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 7;
+}
