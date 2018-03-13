@@ -6,7 +6,7 @@
 	"viewport">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
 </head>
 <body>
     <a href="index.html"><img alt="Freetime Logo" class="logo_nav" src="/images/Logo.svg" width="100px"></a>
@@ -19,60 +19,34 @@
     </nav>
     <section class="hero grid">
         <div class="hero_para">
-            <h1>Main Business Tagline</h1>
+            <h1>ABOUT US MAIN CATCHLINE</h1>
             <div class="dividing_line"></div>
             <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
-            <a href=""><img src="images/ios.png" style="width:120px;"></a> <a href=""><img src="images/android.png" style="width:130px;"></a>
         </div>
-        <div class="phone">
-            <img src="images/Phone.svg">
-        </div>
-        <div class="hero_color_block"></div>
-        <img>
     </section>
-    <section class="video grid">
-        <video class="ft_video" width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div class="video_para">
+    <section class="about grid_two">
+        <img class="ft_about" height="300" src="/images/us.jpeg">
+        <div class="about_para">
             <h2>What is Freetime?</h2>
-            <div class="dividing_line"></div>
+            <div class="dividing_line white"></div>
             <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
+        </div>
+        <div class="about_color_block"></div>
+    </section>
+    <section class="where grid">
+        <div class="where_para">
+            <h1>Where We Are</h1>
+            <div class="dividing_line"></div>
+            <p>Further paragraph enticing users to find out more. Further paragraph enticing users to find out more. Further paragraph enticing users to find out more. Further paragraph enticing users to find out more. Further paragraph enticing users to find out more. Further paragraph enticing users to find out more.</p>
+        </div>
+        <div class="map"> 
+            <div id="map"></div>
+            <p class="address">Freetime <br>34 Lower Windsor Aveunue <br>Belfast <br>BT9 7DX</p>
         </div>
     </section>
-    <section class="features">
-        <div class="feature feature_1">
-            <h2>Title of feature</h2>
-            <div class="dividing_line"></div>
-            <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
-        </div>
-        <div class="feature feature_2">
-            <h2>Title of feature</h2>
-            <div class="dividing_line"></div>
-            <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
-        </div>
-        <div class="feature_3">
-            <h2>Title of feature</h2>
-            <div class="dividing_line"></div>
-            <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
-        </div>
-        <div class="feature_4">
-            <h2>Title of feature</h2>
-            <div class="dividing_line"></div>
-            <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
-        </div>
-    </section>
-    <section class="business">
-        <div class="business_para">
-            <h2>Are you a business and want to advertise on our app?</h2>
-            <div class="dividing_line"></div>
-            <p>Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.Intro paragraph explaining the basic idea of Freetime, what it does and a prompt to find out more or download or soemthing.</p>
-            <a href=""><button class="find_out_more button">Find out more</button></a>
-        </div>
-    </section>
-
-        <footer class="grid">
+    
+    
+    <footer class="grid">
         <!-- Begin MailChimp Signup Form -->
             <div class="newsletter" id="mc_embed_signup">
                 <form action="https://freetimeapp.us12.list-manage.com/subscribe/post?u=257d62e37017bf6887f8dc27f&amp;id=c594321700" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -93,7 +67,7 @@
                 </div>
                 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             <!--End mc_embed_signup-->
-
+        
         <ul class="company">
             <li><h3>company</h3></li>
             <li><a href="about.html">About Us</a></li>
@@ -116,4 +90,20 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript">
+            var map;
+            function initMap() {
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: {lat: 54.5973, lng: -5.9301},
+                zoomControl: true,
+                zoomControlOptions: {
+                    position: google.maps.ControlPosition.LEFT_BOTTOM
+                }
+              });
+            }
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA50TLHl9uxDicLtGIkDIW5ncESKDCi6v8&callback=initMap">
+    </script>
 </body>

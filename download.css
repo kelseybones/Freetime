@@ -1,0 +1,71 @@
+.hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100vw;
+}
+
+.hero_para {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+
+.download {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    height: 80vh;
+}
+
+.phone {
+    grid-column-start: 3;
+}
+
+.download_color_block {
+    z-index: -10;
+    background-color: #F0C22E;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 7;
+}
+
+.ios {
+    grid-column-start: 5;
+    grid-row-start: 3;
+}
+
+.android {
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+form {
+    font-family: light;
+    color: black;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 4;
+}
+
+form input {
+    font-family: light;
+    padding-left: 5px;
+    width: 150px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.query_button {
+    background: #02D4AE; 
+    border-radius: 8px;
+    color: white; 
+    border: none; 
+    width: 100px; 
+    height: 30px;
+    text-align: center;
+}
