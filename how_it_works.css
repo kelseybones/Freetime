@@ -1,0 +1,134 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 100vw;
+}
+
+.hero_para {
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+
+.phones {
+    width: 100vw;
+    padding-bottom: 150px;
+}
+
+.phone_one {
+    grid-column-start: 2; 
+    grid-column-end: 4;
+}
+
+.phone_two {
+    grid-column-start: 5; 
+    grid-column-end: 7;
+}
+
+.phone_three {
+    grid-column-start: 8; 
+    grid-column-end: 10;
+}
+
+.para_one {
+    text-align: center;
+    padding-top: 25px;
+    grid-column-start: 2; 
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
+
+.para_two {
+    text-align: center;
+    padding-top: 25px;
+    grid-column-start: 5; 
+    grid-column-end: 7;
+    grid-row-start: 3;
+
+}
+
+.para_three {
+    text-align: center;
+    padding-top: 25px;
+    grid-column-start: 8; 
+    grid-column-end: 10;;
+    grid-row-start: 3;
+}
+
+.about {
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 100vw;
+    padding-bottom: 50px;
+}
+
+.ft_about {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-column-end: 5;
+    grid-row-start: 4;
+}
+
+.about_para {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 4;
+}
+
+.about_color_block {
+    height: 500px;
+    background-color: #3C649F;
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    z-index: -100;
+}
+
+.where {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 100vw;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.where_para {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+}
+
+.map {
+    max-width: 500px;
+    color: white;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    background-color: #3C649F;
+}
+
+.campaign {
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 100vw;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.campaign_color_block {
+    height: 500px;
+    background-color: #3C649F;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 10;
+    z-index: -100;
+}

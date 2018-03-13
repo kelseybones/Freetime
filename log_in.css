@@ -1,0 +1,56 @@
+.hero {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    width: 100vw;
+}
+
+.hero_para {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+
+.where {
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
+    grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    width: 100vw;
+    margin-bottom: 60px;
+}
+
+.where_para {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+}
+
+form {
+    font-family: light;
+    color: black;
+}
+
+form input {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 20px;
+    font-family: light;
+    padding-left: 5px;
+}
+
+.query {
+    width: 200px; 
+    height: 20px;
+}
+
+.query_button {
+    background: #02D4AE; 
+    border-radius: 8px;
+    color: white; 
+    border: none; 
+    width: 100px; 
+    height: 30px;
+    text-align: center;
+}
