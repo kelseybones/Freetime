@@ -144,6 +144,7 @@ footer {
 }
 
 .form_field {
+    border-radius: 8px;
     height: 25px;
     font-family: light;
     border: none;

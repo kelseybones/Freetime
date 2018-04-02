@@ -17,16 +17,19 @@
 }
 
 .phone_one {
+    width: 100%;
     grid-column-start: 2; 
     grid-column-end: 4;
 }
 
 .phone_two {
+    width: 100%;
     grid-column-start: 5; 
     grid-column-end: 7;
 }
 
 .phone_three {
+    width: 100%;
     grid-column-start: 8; 
     grid-column-end: 10;
 }
@@ -66,8 +69,9 @@
 }
 
 .ft_about {
+    width: 180%;
+    min-width: 300px;
     grid-column-start: 3;
-    grid-column-end: 5;
     grid-column-end: 5;
     grid-row-start: 4;
 }
@@ -98,19 +102,19 @@
 }
 
 .where_para {
-    grid-column-start: 3;
-    grid-column-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 5;
     grid-row-start: 2;
 }
 
 .map {
-    max-width: 500px;
+    width: 150%;
+    min-width: 300px;
     color: white;
-    grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-start: 6;
+    grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 7;
-    background-color: #3C649F;
 }
 
 .campaign {
@@ -124,11 +128,24 @@
 }
 
 .campaign_color_block {
-    height: 500px;
+    min-height: 350px;
     background-color: #3C649F;
     grid-column-start: 1;
     grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    z-index: -100;
+}
+
+.campaign_para {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+}
+
+.metrics {
+    width: 450%;
+    grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 10;
-    z-index: -100;
 }

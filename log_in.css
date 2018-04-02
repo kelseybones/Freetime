@@ -64,3 +64,13 @@ form input {
     grid-row-start: 1;
     grid-row-end: 7;
 }
+
+.terms {
+    margin-right: 5px;
+    width: 16px;
+    margin: 0;
+}
+
+.checkbox_text {
+    font-size: 0.6em;
+}
