@@ -46,6 +46,8 @@ form input {
 }
 
 .query_button {
+    margin-top: 10px;
+    cursor: pointer;
     background: #02D4AE; 
     border-radius: 8px;
     color: white; 
@@ -73,4 +75,15 @@ form input {
 
 .checkbox_text {
     font-size: 0.6em;
+}
+
+input[type=text], select {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

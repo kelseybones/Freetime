@@ -31,6 +31,9 @@
     grid-column-end: 9;
     grid-row-start: 2;
     grid-row-end: 7;
+    
+    animation-name: appear_and_move_left;
+    animation-duration: 4s;
 }
 
 .ios {
@@ -68,4 +71,20 @@ form input {
     width: 100px; 
     height: 30px;
     text-align: center;
+}
+
+@keyframes appear_and_move_left {
+    from {opacity: 0; left: -500px;}
+    to {opacity: 1; left: 0px;}
+}
+
+input[type=text], select {
+    background-color: transparent;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

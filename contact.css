@@ -63,11 +63,14 @@ form input {
 }
 
 .query {
+    border-radius: 8px;
+    border-color: #02D4AE;
     width: 300px; 
     height: 100px;
 }
 
 .query_button {
+    cursor: pointer;
     background: #02D4AE; 
     border-radius: 8px;
     color: white; 
@@ -86,4 +89,14 @@ form input {
     grid-column-end: 9;
     grid-row-start: 1;
     grid-row-end: 7;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

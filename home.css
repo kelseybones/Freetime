@@ -11,6 +11,14 @@
 
 .hero_para p {
     padding-bottom: 20px;
+    
+    animation-name: opacity;
+    animation-duration: 3s;
+}
+
+h1 { 
+    animation-name: opacity;
+    animation-duration: 3s;
 }
 
 .phone {
@@ -25,6 +33,20 @@
     grid-column-end: 11;
     grid-row-start: 2;
     z-index: -100;
+    
+    position: relative;
+    animation-name: appear_and_move_left;
+    animation-duration: 2s;
+}
+
+@keyframes appear_and_move_left {
+    from {opacity: 0; right: -900px;}
+    to {opacity: 1; right: 0px;}
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 .video {
@@ -41,7 +63,7 @@
 
 .video_para {
     grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column-end: 10;
     grid-row-start: 2;
 }
 
@@ -97,3 +119,9 @@
 .find_out_more {
     margin-top: 25px;
 }
+
+
+@media only screen and 
+    (min-device-width : 0px) and 
+    (max-device-width : 1024px) 
+{
