@@ -26,20 +26,24 @@ body {
 h1 {
     font-family: headers;
     text-transform: uppercase;
-    font-size: 2.3em;
+    font-size: 200%;
     margin-bottom: 5px;
 }
 
 h2 {
     font-family: headers;
-    font-size: 1.8em;
+    font-size: 180%;
     margin-bottom: 5px;
 }
 
 h3 {
     text-transform: uppercase;
-    font-size: 1.2em;
+    font-size: 100%;
     font-family: light;
+}
+
+.white {
+    background-color: white;
 }
 
 ul {
@@ -117,6 +121,7 @@ nav a:hover {
 }
 
 nav .button {
+    font-weight: 800;
     margin-left: 20px;
 }
 
@@ -157,7 +162,7 @@ nav .button {
 .grid {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; 
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 footer {
@@ -229,4 +234,49 @@ footer a:hover {
 @keyframes appear_and_move_left {
     from {opacity: 0; right: -900px;}
     to {opacity: 1; right: 0px;}
+}
+
+@media only screen and 
+    (min-device-width : 310px) and 
+    (max-device-width : 425px) 
+    
+{   nav {
+        margin-top: 5px;
+        padding-right: 5px;
+        margin-right: 0;
+    }
+    
+    .social_media_footer a {
+        margin-right: 10px;
+    }
+    
+    .newsletter {
+        max-width: 280px;
+    }
+    
+    .form_field {
+        width: 270px;
+    }
+    
+    .company {
+        min-width: 150px;
+        padding-top: 20px;
+        margin-bottom: 25px;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        }
+
+    .resources {
+        padding-top: 20px;
+        grid-column-start: 7;
+        grid-row-start: 3;  
+    }
+    .social_media_footer {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 4;
+    }
+    #mc_embed_signup {
+        width: 400px;
+    }
 }
