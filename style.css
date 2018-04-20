@@ -85,7 +85,6 @@ a {
     margin-top: 15px;
     margin-left: 50px;
 }
-
 nav {
     background-color: white;
     margin-top: 15px;
@@ -95,6 +94,7 @@ nav {
     padding-right: 15px;
     display: flex;
     justify-content: flex-end;
+    flex-flow: wrap;
     align-items: center;
     height: 50px;
     position: fixed;
@@ -241,9 +241,11 @@ footer a:hover {
     (max-device-width : 425px) 
     
 {   nav {
-        margin-top: 5px;
-        padding-right: 5px;
-        margin-right: 0;
+        height: 100px;
+    }
+    
+    .logo_nav {
+        display: none;
     }
     
     .social_media_footer a {

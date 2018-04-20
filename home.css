@@ -4,6 +4,7 @@
 }
 
 .hero_para {
+    color: white;
     min-width: 280px;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -229,7 +230,8 @@ video {
     (max-device-width : 425px) 
     
 {   .hero {
-    padding-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 25px;
     }
     
     .hero_color_block {
@@ -245,7 +247,7 @@ video {
     }
     
     .hero_para {
-        padding-top: 20px;
+        padding-top: 150px;
         padding-bottom: 20px;
         width: 80vw;
         grid-column-start: 2;
