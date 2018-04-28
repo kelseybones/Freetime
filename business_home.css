@@ -1,14 +1,24 @@
+body {
+    overflow-x: hidden;
+}
+
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
     width: 100vw;
 }
 
 .hero_para {
     text-align: left;
-    grid-column-start: 4;
-    grid-column-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 6;
     grid-row-start: 2;
+}
+
+.metrics {
+    max-width: 700px;;
+    grid-row-start: 2;
+    grid-column-start: 6;
 }
 
 .features {
@@ -18,7 +28,7 @@
     grid-template-columns: 10% 35% 10% 35% 10%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     width: 80vw;
-    background-color: #02D4AE;    
+    background-image: linear-gradient(to right top, #02D4AE, #00B7AD, #009AA2, #007E90, #266276, #2F4858);
 }
 
 .feature {
@@ -42,13 +52,109 @@
 }
 
 .ft_video {
-    grid-column-start: 3;
+    width: 400px;
+    grid-column-start: 2;
     grid-column-end: 5;
-    grid-row-start: 2;
+    grid-row-start: 4;
 }
 
 .video_para {
-    grid-column-start: 7;
-    grid-column-end: 9;
+    grid-column-start: 6;
+    grid-column-end: 10;
     grid-row-start: 2;
+    grid-row-end: 9;
+}
+
+@media only screen and 
+    (min-device-width : 768px) and 
+    (max-device-width : 768px) 
+    
+{   .metrics {
+    display: none;
+    }
+    
+    .logo_nav {
+        display: none;
+    }
+    
+    .hero_para {
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+}
+
+@media only screen and 
+    (min-device-width : 768px) and 
+    (max-device-width : 1024px) 
+    
+{   .features {
+        width: 90vw;
+        padding-bottom: 60px;
+    }
+    
+    .ft_video {
+        width: 250px;
+    }
+    
+    h1 {
+        font-size: 300%;
+    }
+}
+
+@media only screen and 
+    (min-device-width : 310px) and 
+    (max-device-width : 425px) 
+    
+{   .hero {
+        padding-bottom: 100px;
+    }
+    
+    .hero_para {
+        grid-column-start: 2;
+        grid-column-end: 10;
+        padding-bottom: 50px;
+    }
+    
+    .metrics {
+        display: none;
+    }
+    
+    .features {
+        width: 100vw;
+        padding-bottom: 70px;
+    }
+    
+    .feature {
+        padding-right: 30px;
+    }
+    
+    .feature_1 {
+        grid-column-end: 10;
+    }
+    
+    .feature_2 {
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 5;
+    }
+    
+    .video {
+        padding-bottom: 70px;
+    }
+    
+    .video_para {
+        padding-bottom: 30px;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+    
+    .ft_video {
+        width: 280px;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 5;
+    }
+    
 }

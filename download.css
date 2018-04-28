@@ -28,7 +28,7 @@
 
 .download_color_block {
     z-index: -10;
-    background-color: #F0C22E;
+    background-image: linear-gradient(to right top, #F0C22E, #FFBE5A, #FFBD85, #FFC2B0);
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 2;
@@ -66,6 +66,8 @@ form input {
 }
 
 .query_button {
+    font-weight: 800;
+    cursor: pointer;
     background: #02D4AE; 
     border-radius: 8px;
     color: white; 
@@ -86,4 +88,71 @@ input[type=text], select {
     border: 1px solid #000;
     border-radius: 4px;
     box-sizing: border-box;
+}
+
+@media only screen and 
+    (min-device-width : 768px) and 
+    (max-device-width : 1024px)
+{ 
+    .hero {
+        padding-bottom: 30px;
+    }
+    
+    .download {
+        height: 60vh;
+    }
+    
+    .phone {
+        grid-column-start: 2;
+    }
+    
+    .download_color_block {
+        grid-column-end: 11;
+    }
+    
+    .ios {
+        grid-column-start: 5;
+        grid-row-start: 3;
+    }
+
+    .android {
+        grid-column-start: 7;
+        grid-row-start: 3;
+    }
+}
+
+@media only screen and 
+    (min-device-width : 310px) and 
+    (max-device-width : 425px) 
+    
+{   .hero {
+        padding-top: 150px;
+        padding-bottom: 20px;
+    }
+    
+    .phone {
+        display: none;
+    }
+    
+    .download_color_block {
+        grid-column-end: 11;
+        grid-row-start: 2;
+        grid-row-end: 9;
+    }
+    
+    .ios {
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .android {
+        grid-column-start: 6;
+        grid-row-start: 3;
+    }
+    
+    form {
+        grid-column-start: 2;
+        grid-column-end: 9;
+        grid-row-start: 5;
+    }
 }

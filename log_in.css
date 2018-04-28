@@ -87,3 +87,39 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
+
+@media only screen and 
+    (min-device-width : 768px) and 
+    (max-device-width : 1024px) 
+    
+{
+    .where_para {
+        grid-column-start: 4;
+        grid-column-end: 8;
+    }
+
+}
+
+@media only screen and 
+    (min-device-width : 310px) and 
+    (max-device-width : 425px) 
+    
+{   .hero_para {
+        padding-top: 40px;
+    }
+    
+    .download_color_block {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 11;
+    }
+    
+    .where_para {
+        padding-top: 20px;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 5;
+    }
+
+}

@@ -18,32 +18,39 @@
     src: url(/fonts/OpenSans-Light.ttf)
 }
 
+@font-face {
+    font-family: tiempo;
+    src: url(/fonts/Ftreetime-Tiempo.ttf)
+}
+
 body {
     font-family: light;
     font-weight: 200;
 }
 
 h1 {
-    font-family: headers;
-    text-transform: uppercase;
-    font-size: 200%;
+    font-family: tiempo;
+    font-size: 400%;
     margin-bottom: 5px;
 }
 
 h2 {
-    font-family: headers;
+    font-family: tiempo;
     font-size: 180%;
     margin-bottom: 5px;
 }
 
 h3 {
-    text-transform: uppercase;
     font-size: 100%;
-    font-family: light;
+    font-family: tiempo;
+}
+
+p {
+    font-size: 120%;
 }
 
 .white {
-    background-color: white;
+    color: white;
 }
 
 ul {
@@ -63,6 +70,11 @@ ul a {
 
 a { 
     text-decoration: none;
+}
+
+.bold {
+    font-weight: 1000;
+    text-decoration: underline;
 }
 
 .dividing_line {
@@ -149,6 +161,7 @@ nav .button {
 }
 
 .button {
+    background-color: #02D4AE;
     cursor: pointer;
     background: #02D4AE; 
     border-radius: 8px;
@@ -240,7 +253,11 @@ footer a:hover {
     (min-device-width : 310px) and 
     (max-device-width : 425px) 
     
-{   nav {
+{   h1 {
+        font-size: 300%;
+    }
+    
+    nav {
         height: 100px;
     }
     

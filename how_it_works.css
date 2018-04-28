@@ -69,11 +69,14 @@
 }
 
 .ft_about {
+    padding-bottom: 50px;
+    padding-top: 50px;
     width: 180%;
-    min-width: 300px;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 4;
+    min-width: 280px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 9
 }
 
 .about_para {
@@ -83,8 +86,7 @@
 }
 
 .about_color_block {
-    height: 500px;
-    background-color: #3C649F;
+    background-image: linear-gradient(to right top, #3C649F, #5C66A9, #7C67AF, #9A67B0, #B766AD, #D166A5);
     grid-column-start: 4;
     grid-column-end: 11;
     grid-row-start: 1;
@@ -109,7 +111,7 @@
 
 .map {
     width: 150%;
-    min-width: 300px;
+    min-width: 280px;
     color: white;
     grid-column-start: 6;
     grid-column-end: 9;
@@ -128,12 +130,11 @@
 }
 
 .campaign_color_block {
-    min-height: 350px;
-    background-color: #3C649F;
+    background-image: linear-gradient(to right top, #3C649F, #5C66A9, #7C67AF, #9A67B0, #B766AD, #D166A5);
     grid-column-start: 1;
     grid-column-end: 10;
-    grid-row-start: 2;
-    grid-row-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 10;
     z-index: -100;
 }
 
@@ -144,8 +145,148 @@
 }
 
 .metrics {
+    padding-top: 20px;
     width: 450%;
     grid-column-start: 2;
-    grid-row-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
     grid-row-end: 10;
+}
+
+@media only screen and 
+    (min-device-width : 768px) and 
+    (max-device-width : 768px) 
+    
+{
+    .logo_nav {
+        display: none;
+    }
+    
+    .hero_para {
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+    
+    .campaign_para {
+        grid-row-start: 2;
+        grid-row-end: 9;
+        padding-top: 30px;
+    }
+    
+    .metrics {
+        grid-row-start: 3;
+    }
+}
+
+@media only screen and 
+    (min-device-width : 768px) and 
+    (max-device-width : 1024px) 
+    
+{
+    .about_para {
+        grid-column-start: 6;
+        grid-column-end: 10;
+        padding-left: 10px;
+    }
+    
+    .ft_about {
+        padding-bottom: 70px;
+    }
+    
+    .campaign {
+        padding-bottom: 0;
+    }
+    
+    .campaign_color_block {
+        grid-column-end: 11;
+    }
+    
+    .campaign_para {
+        grid-column-start: 7;
+        grid-column-end: 10;
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and 
+    (min-device-width : 310px) and 
+    (max-device-width : 425px) 
+    
+{   .hero {
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    
+    .hero_para {
+        grid-column-start: 2;
+        grid-column-end: 9;
+    }
+    
+    .phones {
+        display: none;
+    }
+    
+    .about_color_block {
+        grid-column-start: 1;
+        grid-column-end: 11;
+        grid-row-start: 1;
+        grid-row-end: 11;
+    }
+    
+    .ft_about {
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    
+    .about_para {
+        padding-top: 20px;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+    
+    .where_para {
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .map {
+        padding-top: 30px;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 6;
+        grid-row-end: 9;
+    }
+    
+    .campaign {
+        padding-bottom: 0;
+    }
+    
+    .campaign_color_block {
+        grid-column-end: 11;
+    }
+
+    .campaign_para {
+        padding-top: 30px;
+        padding-bottom: 20px;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 2;
+        grid-row-end: 5;
+    }
+
+    .metrics {
+        padding-bottom: 30px;
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 10;
+        grid-row-start: 6;
+    }
 }
