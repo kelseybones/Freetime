@@ -28,7 +28,7 @@
 
 .download_color_block {
     z-index: -10;
-    background-image: linear-gradient(to right top, #F0C22E, #FFBE5A, #FFBD85, #FFC2B0);
+    background-image: linear-gradient(to right top, #EABB25, #FFBE5A, #FFBD85, #FFC2B0);
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 2;
