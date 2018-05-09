@@ -82,11 +82,9 @@ h1 {
     padding-bottom: 150px;
 }
 
-video {
-    width: 180%;
-}
-
 .ft_video {
+    min-width: 180px;
+    max-width: 500px;
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -296,6 +294,7 @@ video {
     }
     
     .ft_video {
+        width: 300px;
         grid-row-start: 1;
         grid-column-start: 2;
         grid-column-end: 10;
